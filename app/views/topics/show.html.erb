@@ -1,0 +1,6 @@
+<div class="row">
+  <li class="body"><%= @topic.user.name %></li>
+  <li class="body"><%= image_tag @topic.picture.url if @topic.picture? %></li>
+  <li class="body"><%= link_to @topic.cafe_name,"/topics/#{@topic.id}/maps/new" %></li>
+  <li class="body"><%= @topic.content %></li>
+</div>

@@ -1,0 +1,6 @@
+<h1>Editing Map</h1>
+
+<%= render 'form', map: @topic.maps %>
+
+<%= link_to 'Show', topic_map_path(topic_id: @map.topic_id,id: @map.id) %> |
+<%= link_to 'Index', topic_maps_path(@topic) %>

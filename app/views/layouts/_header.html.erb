@@ -1,0 +1,19 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to 'TOP',root_path %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user == nil %>
+          <li><%= link_to '登録','/users/sign_up' %></li>
+          <li><%= link_to 'ログイン','/users/sign_in' %></li>
+        <% else %>
+          <li><%= link_to current_user.name,'/users/edit' %></li>
+          <li><%= link_to '投稿','/topics/new' %></li>
+          <li><%= link_to 'ログアウト','/users/sign_out',:method=>"delete" %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

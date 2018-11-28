@@ -1,0 +1,15 @@
+<div class="container">
+<h1>カフェ一覧</h1>
+<% @topics.each do |topic| %>
+  <div class="col-md-4">
+    <div class="border">
+    <ul>
+      <li class="body"><%= topic.user.name %></li>
+      <li class="body"><%= image_tag topic.picture.url if topic.picture? %></li>
+      <li class="body"><%= link_to topic.cafe_name,topic %></li>
+      <li class="body"><%= topic.content %></li>
+    </ul>
+    </div>
+  </div>
+<% end %>
+</div>
