@@ -77,3 +77,8 @@ gem 'mini_magick'
 
 gem "gmaps4rails"
 gem 'geocoder'
+
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+
+gem 'payjp'

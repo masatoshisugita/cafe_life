@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   resources :topics do
     resources :maps
   end
+
+  post 'topics/purchase' => 'topics#purchase'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

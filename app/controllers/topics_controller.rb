@@ -2,7 +2,7 @@ class TopicsController < ApplicationController
   before_action :authenticate_user! #ログインしてないとログイン画面にリダイレクトする
 
   def index
-    @topics = Topic.all
+    @topics = Topic.page(params[:page]).per(3)
   end
 
   def new
@@ -23,6 +23,12 @@ class TopicsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def purchase
+    Payjp.api_key = "sk_test_06347736dcae0e04c57f3457"
+    Payjp::Charge.create(:amount => 3000, :card => params['payjp-token'],:currency => 'jpy')
+    redirect_to root_path, notice: "支払いが完了しました"
   end
 
 

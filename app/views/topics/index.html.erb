@@ -1,15 +1,24 @@
-<div class="container">
+<div class="row">
 <h1>カフェ一覧</h1>
-<% @topics.each do |topic| %>
-  <div class="col-md-4">
-    <div class="border">
-    <ul>
-      <li class="body"><%= topic.user.name %></li>
-      <li class="body"><%= image_tag topic.picture.url if topic.picture? %></li>
-      <li class="body"><%= link_to topic.cafe_name,topic %></li>
-      <li class="body"><%= topic.content %></li>
-    </ul>
+  <% @topics.each do |topic| %>
+    <div class="col-md-4">
+      <div class="border">
+        <ul>
+          <li class="body"><%= topic.user.name %></li>
+          <li class="body"><%= image_tag topic.picture.url if topic.picture? %></li>
+          <li class="body"><%= link_to topic.cafe_name,topic %></li>
+          <li class="body"><%= topic.content %></li>
+        </ul>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
 </div>
+<div class="center"><%= paginate @topics %></div>
+
+<%= form_tag(action: :purchase, method: :post) do %>
+  <script type="text/javascript"
+    src="https://checkout.pay.jp"
+    class="payjp-button"
+    data-key="pk_test_04ef567dcc8f8aac53f61db7">
+  </script>
+<% end %>
