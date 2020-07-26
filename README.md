@@ -22,3 +22,22 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+<<<<<<< HEAD
+* test1
+
+* test2
+
+
+* test4
+=======
+* テスト3
+* テスト3
+* テスト3
+* テスト3
+* テスト3
+* テスト3
+* テスト3
+
+
+>>>>>>> master
