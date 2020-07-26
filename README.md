@@ -27,6 +27,7 @@ Things you may want to cover:
 
 * test2
 
+<<<<<<< HEAD
 * テスト3
 * テスト3
 * テスト3
@@ -35,4 +36,6 @@ Things you may want to cover:
 * テスト3
 * テスト3
 
+=======
+>>>>>>> 2765692f49b9f6dd40fa3fd77c626d4e2f6fd340
 * test4
