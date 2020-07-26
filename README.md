@@ -39,4 +39,6 @@ Things you may want to cover:
 
 * テスト5
 
+* テスト6
+
 * test7
