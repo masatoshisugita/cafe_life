@@ -23,12 +23,9 @@ Things you may want to cover:
 
 * ...
 
-<<<<<<< HEAD
 * test1
 
 * test2
-=======
->>>>>>> master
 
 * テスト3
 * テスト3
@@ -38,7 +35,4 @@ Things you may want to cover:
 * テスト3
 * テスト3
 
-<<<<<<< HEAD
 * test4
-=======
->>>>>>> master
